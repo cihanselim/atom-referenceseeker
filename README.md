@@ -1,4 +1,4 @@
-# Atom CODEFINDER
+# Atom Codefinder
 
 (bitiremediler)
 
