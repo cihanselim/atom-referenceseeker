@@ -1,0 +1,15 @@
+div#mylink {
+  display: block;
+  border: solid;
+  border-width: 0.2;
+  background-color: white;
+  font-size: 16px;
+  height: 55px;
+  width: 50vh;
+  color: black;
+  text-align: center;
+}
+
+div#mylink:hover {
+  opacity: 0.6;
+}
