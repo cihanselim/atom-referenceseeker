@@ -6,5 +6,7 @@
 
 1. Clone this repository to "~/github" directory.
 2. Go to "~/github/atom-codefinder", open a terminal at this directory and write "apm link" command
-3. Use Ctrl+Alt+O shortcut to start the plugin
-4. Use Ctrl+Alt+R shortcut to refresh Atom (you need to refresh it after any changes)
+3. Open Atom editor
+4. Use Ctrl+Alt+O shortcut to start the plugin
+5. Use Ctrl+Alt+R shortcut to refresh Atom (you need to refresh it after any changes)
+6. Use Ctrl+Shift+I shortcut to open console on Atom (This shortcut maybe changes on different computers)
