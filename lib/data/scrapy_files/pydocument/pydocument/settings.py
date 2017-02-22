@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for pythonDoc project
+# Scrapy settings for pydocument project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'pythonDoc'
+BOT_NAME = 'pydocument'
 
-SPIDER_MODULES = ['pythonDoc.spiders']
-NEWSPIDER_MODULE = 'pythonDoc.spiders'
+SPIDER_MODULES = ['pydocument.spiders']
+NEWSPIDER_MODULE = 'pydocument.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'pythonDoc (+http://www.yourdomain.com)'
+#USER_AGENT = 'pydocument (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = True
@@ -46,15 +46,14 @@ NEWSPIDER_MODULE = 'pythonDoc.spiders'
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'pythonDoc.middlewares.PythondocSpiderMiddleware': 543,
-}
-
+#SPIDER_MIDDLEWARES = {
+#    'pydocument.middlewares.PydocumentSpiderMiddleware': 543,
+#}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'pythonDoc.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'pydocument.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,8 +64,8 @@ SPIDER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'pythonDoc.pipelines.SomePipeline': 300,
+#ITEM_PIPELINES = {
+#    'pydocument.pipelines.SomePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
