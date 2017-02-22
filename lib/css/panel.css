@@ -27,13 +27,17 @@
 }
 
 #hyperlink {
-  display: block;
-  margin-top: 1px;
+  /*display: block;*/
+  /*margin-top: 1px;*/
+
+  margin-right: 2px;
+  margin-bottom: 2px;
+
   background-color: #424242;
   font-size: 20px;
   font-variant:small-caps;
-  height: 70px;
-  width: 50vh;
+  height: 35px;
+  width: 110px;
   color: white;
   text-align: center;
   display: inline-block;
