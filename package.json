@@ -1,11 +1,11 @@
 {
   "name": "atom-referenceseeker",
-  "main": "./lib/atom-referenceseeker",
+  "main": "./lib/atom-codefinder",
   "version": "0.4.0",
   "description": "A tiny package for Atom to prevent wasting your time on browsers to find sources, references and code samples.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-referenceseeker:toggle"
+    "atom-workspace": "atom-codefinder:toggle"
   },
   "repository": "https://github.com/chnselim/atom-referenceseeker",
   "license": "MIT",
