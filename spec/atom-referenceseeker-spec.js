@@ -1,44 +1,44 @@
 'use babel';
 
-import AtomCodefinder from '../lib/atom-codefinder';
+import AtomReferenceSeeker from '../lib/atom-referenceseeker';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('AtomCodefinder', () => {
+describe('AtomReferenceSeeker', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('atom-codefinder');
+    activationPromise = atom.packages.activatePackage('atom-referenceseeker');
   });
 
-  describe('when the atom-codefinder:toggle event is triggered', () => {
+  describe('when the atom-referenceseeker:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.atom-codefinder')).not.toExist();
+      expect(workspaceElement.querySelector('.atom-referenceseeker')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-codefinder:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-referenceseeker:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.atom-codefinder')).toExist();
+        expect(workspaceElement.querySelector('.atom-referenceseeker')).toExist();
 
-        let atomCodefinderElement = workspaceElement.querySelector('.atom-codefinder');
-        expect(atomCodefinderElement).toExist();
+        let atomReferenceSeekerElement = workspaceElement.querySelector('.atom-referenceseeker');
+        expect(atomReferenceSeekerElement).toExist();
 
-        let atomCodefinderPanel = atom.workspace.panelForItem(atomCodefinderElement);
-        expect(atomCodefinderPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'atom-codefinder:toggle');
-        expect(atomCodefinderPanel.isVisible()).toBe(false);
+        let atomReferenceSeekerPanel = atom.workspace.panelForItem(atomReferenceSeekerElement);
+        expect(atomReferenceSeekerPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'atom-referenceseeker:toggle');
+        expect(atomReferenceSeekerPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('AtomCodefinder', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.atom-codefinder')).not.toExist();
+      expect(workspaceElement.querySelector('.atom-referenceseeker')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-codefinder:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-referenceseeker:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('AtomCodefinder', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let atomCodefinderElement = workspaceElement.querySelector('.atom-codefinder');
-        expect(atomCodefinderElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'atom-codefinder:toggle');
-        expect(atomCodefinderElement).not.toBeVisible();
+        let atomReferenceSeekerElement = workspaceElement.querySelector('.atom-referenceseeker');
+        expect(atomReferenceSeekerElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'atom-referenceseeker:toggle');
+        expect(atomReferenceSeekerElement).not.toBeVisible();
       });
     });
   });

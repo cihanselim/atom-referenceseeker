@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-codefinder",
-        "command": "atom-codefinder:toggle"
+        "label": "Toggle atom-referenceseeker",
+        "command": "atom-referenceseeker:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "atom-codefinder",
+          "label": "atom-referenceseeker",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "atom-codefinder:toggle"
+              "command": "atom-referenceseeker:toggle"
             }
           ]
         }

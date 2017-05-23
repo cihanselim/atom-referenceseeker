@@ -1,4 +1,4 @@
-## Atom Codefinder
+## Atom Reference Seeker
 
 A tiny package that provides searchbox + panel to find references(documentations) on editor.
 
