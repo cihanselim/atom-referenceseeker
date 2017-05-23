@@ -1,10 +1,9 @@
 {
   "name": "atom-referenceseeker",
   "main": "./lib/atom-codefinder",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A tiny package for Atom to prevent wasting your time on browsers to find sources, references and code samples.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "atom-codefinder:toggle"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
