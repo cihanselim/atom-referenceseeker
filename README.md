@@ -11,6 +11,6 @@ A tiny package that provides searchbox + panel to find references(documentations
 ## Install
 
 ``` 
-apm install atom-chat
+apm install atom-referenceseeker
 ```
 or install on Atom editor by searching 'atom-referenceseeker'
